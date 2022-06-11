@@ -1,1 +1,45 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap')
+  
+$bg-color: #111111
+$t-color: #eeeeee
+
+$sp-s: 0.5rem
+$sp-m: 1rem
+$sp-l: 1.5rem
+$sp-xl: 2rem
+
+$t-s: 0.75rem
+$t-m: 1rem
+$t-l: 1.5rem
+$t-xl: 2rem
+
+*
+  margin: 0
+  padding: 0
+  font-family: 'Roboto'
+
+h1, h2, h3, h4, h5, h6
+  margin: 0
+  font-family: 'Lato'
+
+h1
+  margin: $sp-m 0
+
+h2
+  margin: $sp-s 0
+
+h3
+  margin: $sp-s 0
+
+body
+  margin: 0
+  width: 100vw
+  height: 100vh
+  color: $t-color
+  background-color: $bg-color
+
+p
+  margin-bottom: $sp-m
+  &:first-child
+    margin-top: $sp-m

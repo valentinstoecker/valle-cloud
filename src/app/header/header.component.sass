@@ -1,0 +1,19 @@
+@import "../../styles"
+  
+ul
+  font-size: $t-l
+  font-family: 'Lato'
+  background-color: lighten($bg-color, 3)
+  padding-left: $sp-m
+  padding-right: $sp-m
+
+li
+  display: inline-block
+  padding: $sp-s
+  user-select: none
+  &:not(:first-child)
+    float: right
+  &:hover
+    background-color: lighten($bg-color, 6)
+    
+    
