@@ -1,5 +1,12 @@
-<div #cont>
-  <div *ngFor="let elem of elems">
-    <img src="https://www.shopjohanneslerch.net/WebRoot/StoreLDE/Shops/64334274/528C/D4F9/46C0/3381/3178/C0A8/28BB/F8A1/080_Berlin_Sunset_ml.jpg">
+<div (drop)="onDrop" (dragover)="onDragOver" class="container">
+  <div class="flex">
+    <div *ngFor="let img of imgs">
+      <img (click)="onImgClick(img.id)" src="/api/files/{{ img.hash }}/thumbnail">
+    </div>
+  </div>
+  <div *ngIf="sel !== undefined && sel >= 0" class="exit" (click)="onImgClick('')">
+    <div class="preview">
+      <img src="/api/files/{{ imgs[sel].hash }}">
+    </div>
   </div>
 </div>

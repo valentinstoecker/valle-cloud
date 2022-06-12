@@ -38,6 +38,9 @@ yarn-error.log
 testem.log
 /typings
 
+# server
+/server/data
+
 # System files
 .DS_Store
 Thumbs.db
